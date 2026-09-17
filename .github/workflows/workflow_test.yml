@@ -1,18 +1,19 @@
 name: Deploy Project
 on: push
 jobs:
-  code:
+  latest_code:
     runs-on: ubuntu-latest
     steps:
-      -name: Fetch Code
+      - name: Fetch Code
       uses: actions/checkout@V3
-  test:
+  Code_test:
     runs-on: ubuntu-latest
     steps:
-      -name: Install Dependency
-      run: npm install 
-      -name: Run Test
-      run: |
-        npm lint
-        npm build
-        npm test
+      - name: Install Dependency
+        run: npm install 
+      - name: Run Test
+        run: |
+          npm lint
+          npm test
+          npm build
+
