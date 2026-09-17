@@ -5,11 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch Code
-<<<<<<< HEAD
-      uses: actions/checkout@V6
-=======
-        uses: actions/checkout@V3
->>>>>>> 571036272a4f3be64e66136a82d349e39c1b86d3
+        uses: actions/checkout@V6
   Code_test:
     runs-on: ubuntu-latest
     steps:
